@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  $("#image").hide();
   $("#myDIV").hide();
   $("#flip").hide();
+  $("#info").hide();
 
   document.getElementById("answer").onclick = function() {myFunction()};
 
@@ -15,10 +15,14 @@ $(document).ready(function(){
     $("#myDIV").slideToggle();
   };
 
+document.getElementById("more").onclick = function() {thirdFunction()};
 
+  function thirdFunction() {
+    $("#flip").show();
+  };
 
     $("#flip").click(function(){
-        $("#image").slideToggle("slow");
+        $("#info").slideToggle("slow");
     });
 
 
