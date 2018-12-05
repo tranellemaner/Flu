@@ -6,7 +6,38 @@ h3{
   text-align: center;
 }
 
+section {
+  width: 100%;
+  height: 800px;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
+}
 
+#first{
+  background-color: #00c0e4;
+  margin-top: 70px;
+}
+
+#second{
+  background-color: #FFB6C1;
+  margin-top: auto;
+}
+
+#third{
+  background-color: #8FBC8F;
+}
+
+
+
+#cough {
+  width: 10%;
+  display: inline-block;
+}
+
+.photos{
+  display: inline-block;
+}
 
 #flip, #info {
     padding: 5px;
