@@ -1,52 +1,144 @@
 body {
   text-align: center;
+  background-color: #F8FAFA;
 }
 
 h3{
   text-align: center;
 }
 
-section {
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+
+#Questionone{
+  margin-top: 300px;
+  margin-bottom:auto;
+  width: auto;
+  height: auto;
+  background-color: lightblue;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.questionstyle{
+  width: 200px;
+  background-color: lightgrey;
+  margin: auto;
+}
+
+
+#first,#third,#final{
+  margin-top: 0px;
+  margin-bottom: 300px;
+  width: auto;
+  height: auto;
+  background-color: lightblue;
+  padding: 5px;
+}
+
+.small {
+  background-color: lightblue;
+  padding: 5px;
+  width: 500px;
+  margin: auto;
+}
+
+#answerone,#answerthree{
+  padding: 5px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+
+#container {
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto
+}
+
+#Questiontwo{
+  margin-top: 300px;
+  margin-bottom:auto;
+  width: auto;
+  height: auto;
+  background-color: lightblue;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.container{
+  display: inline-block;
   width: 100%;
-  height: 800px;
-  box-sizing: border-box;
-  padding: 20px;
-  overflow: hidden;
+  background-color: lightblue;
+  margin: auto;
 }
 
-#first{
-  background-color: #00c0e4;
-  margin-top: 70px;
+#column{
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: lightblue;
 }
 
-#second{
-  background-color: #FFB6C1;
-  margin-top: auto;
+#dione{
+  background-color: red;
+}
+#ditwo{
+  background-color: lightpink;
+}
+#dithree {
+  background-color: lightgreen;
+}
+#difour{
+  background-color: yellow;
+}
+#difive {
+  background-color: blue;
+}
+#disix{
+  background-color: purple;
 }
 
-#third{
-  background-color: #8FBC8F;
+#answertwo{
+  padding: 5px;
+  text-align: center;
+  background-color: lightblue;
+  margin-bottom: 200px;
 }
 
-
-
-#cough {
-  width: 10%;
-  display: inline-block;
+#Questionthree,#final{
+  margin-top: 300px;
+  margin-bottom:auto;
+  width: auto;
+  height: auto;
+  background-color: lightblue;
+  text-align: center;
+  padding-bottom: 3px;
 }
 
-.photos{
-  display: inline-block;
-}
-
-#flip, #info {
-    padding: 5px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 1px #c3c3c3;
-}
-
-#info {
-    padding: 50px;
-    display: none;
+@media screen and (min-width: 400px) {
+  article {
+    margin: auto;
+  }
 }

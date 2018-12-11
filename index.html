@@ -1,47 +1,130 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="index.css">
-<title> Flu slide</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/themes/gray.js"></script>
+<title> Flu effects on children</title>
 </head>
 <body>
 
-<section id="first">
-  <h2>Children are the most at risk for the flu. True or False?</h2>
+<article>
 
-  <p id="answer">Click to show Answer</p>
+  <div id="firstquestion">
+     <div id="Questionone">
+         <h1> Last season's flu was the worst on record for children?</h1>
+           <div class="questionstyle">
+             <h2>True or False</h2>
+           </div>
+    </div>
 
-  <button id="button">Show Graph</button>
+    <div id="answerone">
+      <h2> True </h2>
+      <i id="down" class="arrow down"></i>
+    </div>
 
-  <div id="myDIV">
-    <img src="flu.jpg" alt="flu graph">
-    <p> This graph compares national pediatric flu deaths.</p>
-    <p id="more"> Learn More </p>
+    <div id="first">
+      <div class="small">
+        <h3>Except for the swine flu epidemic in 2009-2010, the record for largest number of reported flu deaths in children was held by the single season of 2012-2013 with about 171 pediatric deaths. This past year’s strain of flu was severe not only for the general public but more so for children than any other year in the past. The number of pediatric deaths reached a new high of 179 as of August 2018.</h3>
+        <p>Chart: <i id="right" class="right"></i></p>
+      </div>
+    </div>
   </div>
 
-<div id="flip">Click to slide down panel</div>
-<div id="info">Except for the swine flu epidemic in 2009-2010, the record for largest number of reported flu deaths in children was held by the single season of 2012-2013 with about 171 pediatric deaths. This past year’s strain of flu was severe not only for the general public but more so for children than any other year in the past. The number of pediatric deaths reached a new high of 179 as of August 2018. </div>
-</section>
+
+  <div id="chart">
+    <div id="container"></div>
 
 
-<section id="second">
-  <h2>Symptoms</h2>
-    <div id="symp1" class="photos">
-      <img id="sneeze" src="sneeze.jpg" alt="sneeze">
-      <p>Sneezing</p>
+    <script>
+    Highcharts.chart('container', {
+
+    title: {
+      text: 'Pediatric flu deaths'
+    },
+
+    xAxis: {
+      text: [2014-15, 2015-16, 2017-18, 2018-19],
+    },
+  ss
+    yAxis: {
+      type: 'logarithmic',
+      minorTickInterval: 0.1
+    },
+
+    tooltip: {
+      headerFormat: '<b>{series.name}</b><br />',
+      pointFormat: '{point.y}'
+    },
+
+    series: [{
+      data: [94, 110, 185, 5,],
+      pointStart: 1
+    }]
+  });
+    </script>
+
+  <p>Next: <i id="up" class="up"></i></p>
+  </div>
+
+  <div id="secondquestion">
+      <div id="Questiontwo">
+          <h1> Roll over to reveal the reportable diseases?</h1>
+            <div class="container">
+              <div id="column">
+                  <div id="dione">Influenza</div>
+                  <div id="ditwo">Asthma</div>
+                  <div id="dithree">STDs</div>
+                  <div id="difour">Shingles</div>
+                  <div id="difive">Chickenpox</div>
+                  <div id="disix">diabetes</div>
+              </div>
+            </div>
+          <p> More: <i id="next" class="arrow down"></i></p>
+      </div>
+
+      <div id="answertwo">
+        <div class="small">
+          <h3> According to the Contra Costa health services, there are over 85 reportable diseases. Flu viruses are unpredictable and can change overtime making them hard to track. Does that mean you shouldn't get vaccinated? </h3>
+            <p>Next: <i id="righttwo" class="right"></i></p>
+        </div>
+      </div>
+  </div>
+
+  <div id="thirdquestion">
+    <div id="Questionthree">
+        <h1> Avoiding sick people is the best way for people to stay healthy?</h1>
+          <div id="stylethree" class="questionstyle">
+            <h2>True or False</h2>
+          </div>
     </div>
-    <div id="symp2" class="photos" >
-      <img id="cough" src="cough.jpg" alt="cough">
-      <p>Coughing</p>
+
+    <div id="answerthree">
+      <h2> False </h2>
+      <i id="downtwo" class="arrow down"></i>
     </div>
-</section>
 
-<section id="third">
+    <div id="third">
+      <div class="small">
+        <h3>The best way to remain healthy is to get vaccinated. For both the 2016-2017 and 2017-2018 seasons the ACIP recommended that LAIV4 or Live attenuated influenza vaccine not be distributed because of efficacy. The ACIP analyzed data from 2010-11 through 2016-17 and found that children were the least protected without this vaccination method. </h3>
+        <p>Conclusion: <i id="rightthree" class="right"></i></p>
+      </div>
+    </div>
+  </div>
 
-    </section>
+  <div id="final">
+    <h1> Conclusion </h1>
+    <div class="small">
+      <h3>According to ControlFlu.com during 2016-17, the first year when the FluMist was not available, there was a 41% decrease in the overall vaccination rate across public schools. It’s possible that the decrease in the vaccination number led to more students contracting the disease; however, there is no concrete data record of children who contract the flu. </h3>
+      <h5> Sources: https://www.cdc.gov/mmwr/volumes/67/rr/rr6703a1.htm
+      <br>  https://tranellemaner.weebly.com/flumist.html
+      <br>  https://cchealth.org/flu/ </h5>
+    </div>
+  </div>
 
-
+</article>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="index.js"></script>
